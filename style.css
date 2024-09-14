@@ -117,7 +117,7 @@ h3 {
 }
 
 .star-block {
-  position: fixed;
+  position: absolute;
   z-index: 2;
   right: 1vw;
   top: 0;
