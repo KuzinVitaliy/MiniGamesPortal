@@ -27,6 +27,8 @@
     height: 300px;
 }
 
+
+
 $starBaseX : 20px;
 $starBaseY : -280px;
 
@@ -129,6 +131,12 @@ $baseWidth: 1200px;
     flex-wrap: wrap;
     margin-top: 72px;
     gap: 32px;
+}
+
+.game-kind-ref:hover {
+    transform: scale(1.2);
+    transition: all;
+    border: red 1 solid;
 }
 
 .game-kind-column {
