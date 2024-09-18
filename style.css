@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -100,20 +101,31 @@ h3 {
   border: 1px blue solid;
 }
 
+.block-view03 {
+  border: 1px green solid;
+}
+
 .top {
   z-index: 1;
   background-color: rgb(225, 255, 143);
   height: 800px;
+  background-image: url(./img/StarsRight.svg);
+  background-repeat: no-repeat;
+  background-position: 620px -170px;
 }
 .top__headers {
   z-index: 3;
-  margin-left: 8.3vw;
   /*padding-left: 120px;*/
   padding-top: 196px;
   max-width: 770px;
 }
 .top__main-header {
   margin-bottom: 24px;
+}
+
+.headers__button {
+  margin-top: 48px;
+  background-color: black;
 }
 
 .star-block {
@@ -159,6 +171,7 @@ h3 {
   padding: 20px;
   bottom: unset;
   max-width: 100vw;
+  margin-bottom: 100px;
 }
 .menu-line-item {
   color: rgb(32, 32, 39);
@@ -207,6 +220,18 @@ h3 {
   text-align: left;
 }
 
+.about-game__mobile {
+  display: none;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 48px;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -217,6 +242,12 @@ h3 {
   flex-wrap: wrap;
   margin-top: 72px;
   gap: 32px;
+}
+
+.game-kind-ref:hover {
+  transform: scale(1.2);
+  transition: all;
+  border: red 1 solid;
 }
 
 .game-kind-column {
@@ -304,22 +335,108 @@ h3 {
 .game-base, .game-right, .game-left {
   display: flex;
   flex-direction: row;
-  width: 1200px;
-  height: 500px;
   background-color: rgb(255, 255, 255);
   margin-bottom: 32px;
+  border-radius: 30px;
+}
+
+.about-game__mobile {
+  display: block;
+}
+
+.about-games__header1 {
+  display: none;
+}
+
+.about-games__header2 {
+  display: none;
+}
+
+.game-kinds {
+  display: none;
+}
+
+.game-left {
+  flex-direction: row-reverse;
 }
 
 .game-info {
   padding: 48px;
-  width: 50%;
+  flex-basis: 50%;
+  flex-grow: 1;
 }
 
 .game-logo {
-  width: 50%;
+  flex-basis: 50%;
   height: auto;
+  flex-grow: 1;
 }
 
 .play-game {
   background-color: black;
+  width: 100%;
+}
+
+/* форматирования для планшета*/
+/*#region table-version*/
+/* форматирования для мобильного устройства*/
+/*#region mobile-version */
+@media (max-width: 414px) {
+  .center {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .game-left {
+    flex-direction: column;
+  }
+  .game-right {
+    flex-direction: column;
+  }
+  .game-info {
+    padding: 30px;
+  }
+  .game-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 32px;
+  }
+  .about-games {
+    padding-top: 48px;
+  }
+  .menu-line {
+    display: none;
+  }
+  h1 {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .top__headers {
+    padding-left: 40px;
+    padding-right: 40px;
+    align-content: center;
+  }
+  .games {
+    padding-bottom: 40px;
+  }
+  .text1 {
+    text-align: center;
+  }
+  .footer {
+    height: 100px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

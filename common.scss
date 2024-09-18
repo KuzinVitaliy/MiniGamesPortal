@@ -6,6 +6,10 @@ $color4 : rgb(255, 255, 255);
 $border-radius: 30px;
 $button-border-radius: 60px;
 
+$mainWidth : 1200px;
+$mainWidthPlan : 786px;
+$mainWidthMob : 414px;
+
 * {
     padding: 0;
     margin: 0;
@@ -106,4 +110,8 @@ h3 {
 
 .block-view02 {
     border: 1px blue solid;
+}
+
+.block-view03 {
+    border: 1px green solid;
 }
