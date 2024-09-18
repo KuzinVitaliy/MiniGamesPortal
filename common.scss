@@ -1,0 +1,109 @@
+$font-family: Montserrat;
+$color1 : rgb(32, 32, 39);
+$color2 : rgb(188, 236, 48);
+$color3 : rgb(225, 255, 143);
+$color4 : rgb(255, 255, 255);
+$border-radius: 30px;
+$button-border-radius: 60px;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $font-family, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: $color1;
+    font-family: $font-family;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+h2 {
+    color: $color1;
+    font-family: $font-family;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+h3 {
+    color: $color1;
+    font-family: $font-family;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.text1 {
+    color: $color1;
+    font-family: $font-family;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.text2 {
+    color: $color1;
+    font-family: $font-family;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.text3 {
+    color: $color1;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.button {
+    color: $color4;
+    font-family: $font-family;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid $color1;
+    border-radius: $button-border-radius;
+    background: $color1;
+    height: 66px;
+    width: 247px;
+}
+
+.button:hover {
+    color: $color1;
+    background-color: $color4;
+}
+
+.block-view01 {
+    border: 1px red solid;
+}
+
+.block-view02 {
+    border: 1px blue solid;
+}
