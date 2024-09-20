@@ -1,4 +1,4 @@
-//return;
+return;
 
 // Task 01
 let a = 10;
