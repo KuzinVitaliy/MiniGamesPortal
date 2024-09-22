@@ -31,7 +31,8 @@
     position: absolute;
     z-index: 1;
     top: 0;
-    width: 1000px;
+    left: 0;
+    width: 100vw;
     height: 710px;
     overflow: hidden;
 }
@@ -53,6 +54,11 @@
     right: -95px;
 }
 
+.content-stars {
+    background-image: url(./img/BlackStar1.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg);
+    background-position: 998px 73px, 50px 862px, 30px 809px, 1336px 1636px, 1282px 1600px, 1349px 4950px, 1281px 4900px;
+    background-repeat: no-repeat;
+}
 
 $starBaseX : 00px;
 $starBaseY : -00px;
@@ -61,7 +67,7 @@ $starBaseY : -00px;
     overflow: hidden;
     position: absolute;
     top: -360px;
-    right: -500px;
+    left: calc(100% - 605px);
 }
 
 .mainHeader {
@@ -275,7 +281,7 @@ $baseWidth: 1200px;
 
 
 .games {
-    background-color: $color1;
+    background-color: transparent;
     gap: 32px;
     padding-bottom: 140px;
 }
@@ -474,4 +480,5 @@ $baseWidth: 1200px;
     .mini-game {
         display: none;
     }
+
 }

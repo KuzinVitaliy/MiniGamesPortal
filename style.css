@@ -133,7 +133,8 @@ h3 {
   position: absolute;
   z-index: 1;
   top: 0;
-  width: 1000px;
+  left: 0;
+  width: 100vw;
   height: 710px;
   overflow: hidden;
 }
@@ -155,11 +156,17 @@ h3 {
   right: -95px;
 }
 
+.content-stars {
+  background-image: url(./img/BlackStar1.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg);
+  background-position: 998px 73px, 50px 862px, 30px 809px, 1336px 1636px, 1282px 1600px, 1349px 4950px, 1281px 4900px;
+  background-repeat: no-repeat;
+}
+
 .bigStar {
   overflow: hidden;
   position: absolute;
   top: -360px;
-  right: -500px;
+  left: calc(100% - 605px);
 }
 
 .mainHeader {
@@ -357,7 +364,7 @@ h3 {
 }
 
 .games {
-  background-color: rgb(32, 32, 39);
+  background-color: transparent;
   gap: 32px;
   padding-bottom: 140px;
 }
