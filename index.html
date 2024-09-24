@@ -12,50 +12,60 @@
 </head>
 
 <body>
-    <header class="top center">
-        <div class="star-block">
-            <img class="bigStar" src="./img/bigstar.svg" alt="">
-            <img class="light01" src="./img/light01.svg" alt="">
+    <header class="top center top_header_stars">
+        <div class="star-block block-view01-">
+            <img class="bigStar block-view03-" src="./img/StarsRight.svg" alt="">
+            <!--             <img class="light01" src="./img/light01.svg" alt="">
             <img class="light02" src="./img/light02.svg" alt="">
-            <img class="light03" src="./img/light03.svg" alt="">
+            <img class="light03" src="./img/light03.svg" alt="">  -->
+            <img style="position: absolute; left: 4.3vw; top: 94px;" src="./img/Star2.svg" alt="">
+            <img style="position: absolute; left: 10.8vw; top: 69px;" src="./img/Star3.svg" alt="">
         </div>
-        <div class="top__headers">
-            <div class="top__main-header">
-                <h1>Добро пожаловать<br />на мой сайт мини-игр</h1>
+
+        <div class="star-block-mob center block-view01-">
+            <img class="smallStar block-view03-" src="./img/SmallStar.svg" alt="">
+            <img style="position: absolute; left: 37px; top: 97px;" src="./img/Star2.svg" alt="">
+            <img style="position: absolute; left: 91px; top: 69px;" src="./img/Star3.svg" alt="">
+            <img style="position: absolute; left: 272px; top: 557px;" src="./img/Star5.svg" alt="">
+            <img style="position: absolute; left: 303px; top: 580px;" src="./img/Star4.svg" alt="">
+        </div>
+
+        <div class="top__headers block-view02-">
+            <div class="top__main-header ">
+                <h1 class="mainHeader">Добро пожаловать<br />на мой сайт мини-игр</h1>
                 <p class="text1">Тебе предстоит пройти несколько увлекательных игр.<br />Если готов, нажимай
                     <b>«Поехали!»</b> и
                     <b>приступай</b>.
                 </p>
             </div>
-            <button class="button" type="button">Поехали!</button>
-        </div>
-        <img style="position: absolute; left: 4.3vw; top: 94px;" src="./img/Star2.svg" alt="">
-        <img style="position: absolute; left: 10.8vw; top: 69px;" src="./img/Star3.svg" alt="">
-        <div class="menu-line">
-            <a href="#game01" class="menu-line-item">Викторина</a>
-            <a href="#game02" class="menu-line-item">угадай число</a>
-            <a href="#game03" class="menu-line-item">Переверни текст</a>
-
-            <!-- <a href="#" class="menu-line-item">Простая арифметика</a>
-            <a href="#" class="menu-line-item">Камень, ножницы, бумага</a>
-            <a href="#" class="menu-line-item">Генератор случайных цветов</a> -->
+            <button class="headers__button button" type="button">Поехали!</button>
         </div>
     </header>
-    <section class="content center">
+    <div class="menu-line">
+        <a href="#game01" class="menu-line-item">Викторина</a>
+        <a href="#game02" class="menu-line-item">угадай число</a>
+        <a href="#game03" class="menu-line-item">Переверни текст</a>
+
+        <a href="#game04" class="menu-line-item">Простая арифметика</a>
+        <a href="#game05" class="menu-line-item">Камень, ножницы, бумага</a>
+        <a href="#game06" class="menu-line-item">Генератор случайных цветов</a>
+    </div>
+    <section class="content center content-stars">
         <div class="about-games">
             <div class="about-games__header1">Об играх</div>
             <div class="about-games__header2">В моей коллекции представлено 6 игр на разные темы. <br /> Игры несложные
                 — в них может поиграть каждый. <br /> Все игры доступны для пользования.</div>
+            <div class="about-game__mobile">Мини-игры</div>
             <div class="game-kinds">
-                <div class="game-kind-column">
-                    <a  class="game-kind-ref" href="#game01">
+                <div class="game-kind-column thirdBlock">
+                    <a class="game-kind-ref" href="#game01">
                         <div class="game-kind">
                             <img src="./img/GameKind01.svg" alt="Угадай число">
                             <div class="game-kind__number">Игра №1</div>
                             <div class="game-name game-kind__name">Угадай число</div>
                         </div>
                     </a>
-                    <a href="#game04">
+                    <a class="game-kind-ref" href="#game04">
                         <div class="game-kind">
                             <img src="./img/GameKind04.svg" alt="Угадай число">
                             <div class="game-kind__number">Игра №4</div>
@@ -64,15 +74,15 @@
                     </a>
                 </div>
 
-                <div class="game-kind-column">
-                    <a href="#game02">
+                <div class="game-kind-column thirdBlock">
+                    <a class="game-kind-ref" href="#game02">
                         <div class="game-kind">
                             <img src="./img/GameKind02.svg" alt="Угадай число">
                             <div class="game-kind__number">Игра №2</div>
                             <div class="game-name game-kind__name">Простая <br /> арифметика</div>
                         </div>
                     </a>
-                    <a href="#game05">
+                    <a class="game-kind-ref" href="#game05">
                         <div class="game-kind">
                             <img src="./img/GameKind05.svg" alt="Угадай число">
                             <div class="game-kind__number">Игра №5</div>
@@ -80,15 +90,15 @@
                         </div>
                     </a>
                 </div>
-                <div class="game-kind-column">
-                    <a href="#game03">
+                <div class="game-kind-column thirdBlock">
+                    <a class="game-kind-ref" href="#game03">
                         <div class="game-kind">
                             <img src="./img/GameKind03.svg" alt="Переверни текст">
                             <div class="game-kind__number">Игра №3</div>
                             <div class="game-name game-kind__name">Переверни текст</div>
                         </div>
                     </a>
-                    <a href="#game06">
+                    <a class="game-kind-ref" href="#game06">
                         <div class="game-kind">
                             <img src="./img/GameKind06.svg" alt="Генератор случайных цветов">
                             <div class="game-kind__number">Игра №6</div>
@@ -97,18 +107,18 @@
                     </a>
                 </div>
             </div>
-            <p class="">Мини-игры</p>
+            <p class="mini-game">Мини-игры</p>
             <section class="games center">
                 <div class="game-left">
+                    <img class="game-logo" src="./img/GameKind01.svg" alt="">
                     <div class="game-info" id="game01">
                         <div class="game-name">Угадай число</div>
                         <div class="game-description">Попробуй угадать случайное число от 1 до 100.</div>
                         <button class="play-game">Играть!</button>
                     </div>
-                    <img class game-logo src="./img/GameKind01.svg" alt="">
                 </div>
                 <div class="game-right">
-                    <img class game-logo src="./img/GameKind02.svg" alt="">
+                    <img class="game-logo" src="./img/GameKind02.svg" alt="">
                     <div class="game-info" id="game02">
                         <div class="game-name">Простая <br />арифметика</div>
                         <div class="game-description">Попробуй решить простые арифметические задачи.</div>
@@ -116,15 +126,15 @@
                     </div>
                 </div>
                 <div class="game-left">
+                    <img class="game-logo" src="./img/GameKind03.svg" alt="">
                     <div class="game-info" id="game03">
                         <div class="game-name">Переверни текст</div>
                         <div class="game-description">Попробуй ввести текст, который будет перевернут.</div>
                         <button class="play-game">Играть!</button>
                     </div>
-                    <img class game-logo src="./img/GameKind03.svg" alt="">
                 </div>
                 <div class="game-right">
-                    <img class game-logo src="./img/GameKind04.svg" alt="">
+                    <img class="game-logo" src="./img/GameKind04.svg" alt="">
                     <div class="game-info" id="game04">
                         <div class="game-name">Викторина</div>
                         <div class="game-description">Отвечай на вопросы викторины с вариантами ответов.</div>
@@ -132,15 +142,15 @@
                     </div>
                 </div>
                 <div class="game-left">
+                    <img class="game-logo" src="./img/GameKind05.svg" alt="">
                     <div class="game-info" id="game05">
                         <div class="game-name">Камень, <br />ножницы, <br />бумага</div>
                         <div class="game-description">Сыграй в популярную игру против компьютера.</div>
                         <button class="play-game">Играть!</button>
                     </div>
-                    <img class game-logo src="./img/GameKind05.svg" alt="">
                 </div>
                 <div class="game-right">
-                    <img class game-logo src="./img/GameKind06.svg" alt="">
+                    <img class="game-logo" src="./img/GameKind06.svg" alt="">
                     <div class="game-info" id="game06">
                         <div class="game-name">Генератор <br />случайных <br /> цветов</div>
                         <div class="game-description">Игра, в которой при клике на кнопку фон страницы меняется на
@@ -154,6 +164,8 @@
     <footer class="footer">
         Все права защищены.
     </footer>
+    <script src="--hm-1.js"></script>
+    <script src="hm-2.js"></script>
 </body>
 
 </html>
