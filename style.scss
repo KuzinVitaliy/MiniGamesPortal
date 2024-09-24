@@ -6,9 +6,8 @@
     min-height: 710px;
 
     &__headers {
-        position: absolute;
-
-        z-index: 3;
+        //position: absolute;
+        //z-index: 3;
         padding-top: 196px;
         max-width: 770px;
         padding-left: 120px;
@@ -21,6 +20,16 @@
     }
 }
 
+.top_header_stars {
+    background-image: url(./img/StarsRight.svg ), url(./img/Star2.svg), url(./img/Star3.svg),
+        url(./img/Star01.svg), url(./img/Star02.svg);
+    ;
+    //background-position: 998px 73px;
+
+    background-position: calc(100vw - 600px) -360px, 63px 94px, 156px 69px, calc(100vw - 432px) 560px, calc(100vw - 468px) 549px;
+    background-repeat: no-repeat;
+}
+
 .headers__button {
     margin-top: 48px;
     background-color: black;
@@ -28,6 +37,7 @@
 }
 
 .star-block {
+    display: none;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -219,7 +229,7 @@ $baseWidth: 1200px;
     display: flex;
     flex-direction: column;
     background-color: $color4;
-    width: 378px;
+    max-width: 378px;
     border-radius: $border-radius;
 
     &__logo {
@@ -327,8 +337,9 @@ $baseWidth: 1200px;
 
 /* форматирования для планшета*/
 /*#region table-version*/
-
 @media ((max-width: $mainWidth) and (min-width:calc($mainWidthPlan + 1px))) {
+    $mainWidth :$mainWidthPlan;
+
     .game-name {
         font-size: 24px;
         font-weight: 500;
@@ -340,12 +351,21 @@ $baseWidth: 1200px;
         font-weight: 400;
         line-height: 20px;
     }
+
+    .thirdBlock {
+        flex-direction: row;
+    }
+
+    .center {
+        padding-left: calc(50% - $mainWidthPlan/2);
+        padding-right: calc(50% - $mainWidthPlan/2);
+    }
 }
+
 
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
 @media (max-width: $mainWidthPlan) {
-
     .star-block {
         display: none;
     }
