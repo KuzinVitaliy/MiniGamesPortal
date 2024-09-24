@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   padding: 0;
   margin: 0;
@@ -110,17 +111,23 @@ h3 {
   background-color: rgb(225, 255, 143);
   min-height: 710px;
 }
+
 .top__headers {
-  position: absolute;
-  z-index: 3;
   padding-top: 196px;
   max-width: 770px;
   padding-left: 120px;
   padding-right: 40px;
   align-content: center;
 }
+
 .top__main-header {
   margin-bottom: 24px;
+}
+
+.top_header_stars {
+  background-image: url(./img/StarsRight.svg), url(./img/Star2.svg), url(./img/Star3.svg), url(./img/Star01.svg), url(./img/Star02.svg);
+  background-position: calc(100vw - 600px) -360px, 63px 94px, 156px 69px, calc(100vw - 432px) 560px, calc(100vw - 468px) 549px;
+  background-repeat: no-repeat;
 }
 
 .headers__button {
@@ -130,6 +137,7 @@ h3 {
 }
 
 .star-block {
+  display: none;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -199,6 +207,7 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
 }
+
 .menu-line-item {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
@@ -210,6 +219,7 @@ h3 {
   text-transform: uppercase;
   text-wrap: nowrap;
 }
+
 .menu-line-item::after {
   content: "___";
   color: transparent;
@@ -225,6 +235,7 @@ h3 {
 .about-games {
   padding-top: 94px;
 }
+
 .about-games__header1 {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
@@ -234,6 +245,7 @@ h3 {
   letter-spacing: 0px;
   text-align: left;
 }
+
 .about-games__header2 {
   color: rgb(255, 255, 255);
   margin-top: 24px;
@@ -307,17 +319,20 @@ h3 {
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
-  width: 378px;
+  max-width: 378px;
   border-radius: 30px;
 }
+
 .game-kind__logo {
   border-radius: 30px;
 }
+
 .game-kind__number {
   /* Frame 2043683020 */
   position: static;
   width: 111px;
   height: 36px;
+  color: rgb(32, 32, 39);
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -331,6 +346,7 @@ h3 {
   border-radius: 60px;
   background-color: rgb(247, 247, 247);
 }
+
 .game-kind__name {
   padding-left: 32px;
   padding-right: 32px;
@@ -405,68 +421,95 @@ h3 {
     font-weight: 500;
     line-height: 30px;
   }
+
   .game-description {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
   }
+
+  .thirdBlock {
+    flex-direction: row;
+  }
+
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
 }
+
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
 @media (max-width: 786px) {
   .star-block {
     display: none;
   }
+
   .text1 {
     padding-bottom: 0px;
   }
+
   .star-block-mob {
     display: block;
   }
+
   .top__headers {
     padding-top: 147px;
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .center {
     padding-left: 5px;
     padding-right: 5px;
   }
+
   .headers__button {
     width: 100%;
   }
+
   .about-game__mobile {
     display: block;
   }
+
   .about-games__header1 {
     display: none;
   }
+
   .about-games__header2 {
     display: none;
   }
+
   .game-name {
     padding: 0px;
   }
+
   .game-description {
     padding-left: 0px;
     padding-right: 0px;
   }
+
   .game-left {
     flex-direction: column;
   }
+
   .game-right {
     flex-direction: column;
   }
+
   .game-info {
     padding: 30px;
   }
+
   .play-game {
     width: 100%;
     margin-left: 0px;
   }
+
   .game-kinds {
     display: none;
   }
+
   .game-description {
     font-size: 16px;
     font-weight: 400;
@@ -475,17 +518,21 @@ h3 {
     text-align: left;
     padding-bottom: 32px;
   }
+
   .about-games {
     padding-top: 48px;
   }
+
   .headers__button {
     margin-top: 0px;
     background-color: black;
     margin-bottom: 90px;
   }
+
   .menu-line {
     display: block;
   }
+
   h1 {
     color: rgb(32, 32, 39);
     font-family: Montserrat;
@@ -495,9 +542,11 @@ h3 {
     letter-spacing: 0px;
     text-align: center;
   }
+
   .games {
     padding-bottom: 40px;
   }
+
   .text1 {
     text-align: center;
     padding-bottom: 0px;
@@ -507,6 +556,7 @@ h3 {
     line-height: 20px;
     text-align: center;
   }
+
   .footer {
     height: 100px;
     color: rgb(0, 0, 0);
@@ -517,7 +567,10 @@ h3 {
     letter-spacing: 0px;
     text-align: center;
   }
+
   .mini-game {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
