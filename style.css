@@ -115,7 +115,6 @@ h3 {
 .top__headers {
   padding-top: 196px;
   max-width: 770px;
-  padding-left: 120px;
   padding-right: 40px;
   align-content: center;
 }
@@ -428,9 +427,11 @@ h3 {
     line-height: 20px;
   }
 
+
   .thirdBlock {
     flex-direction: row;
   }
+
 
   .center {
     padding-left: calc(50% - 393px);
