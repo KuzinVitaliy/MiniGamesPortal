@@ -433,6 +433,9 @@ h3 {
   .star-block {
     display: none;
   }
+  .content-stars {
+    display: none;
+  }
   .text1 {
     padding-bottom: 0px;
   }

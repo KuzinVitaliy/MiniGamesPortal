@@ -1,14 +1,8 @@
 
 //Task03/01
 
-let k = 100;
-iterations = 0;
-
-while (k >= 0) {
-    k -= 7;
-    iterations++;
-}
-console.log(k, iterations);
+for (let j = 0; j < 2; j++)
+    console.log("Привет");
 
 //Task 03/02
 for (let i = 1; i < 6; i++) {
@@ -70,5 +64,13 @@ console.log(`Min = ${min} Max = ${max}`);
 
 
 
+//Add-task 03/01
 
+let k = 100;
+iterations = 0;
 
+while (k >= 0) {
+    k -= 7;
+    iterations++;
+}
+console.log(k, iterations);
