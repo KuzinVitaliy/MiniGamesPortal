@@ -243,8 +243,8 @@ $baseWidth: 1200px;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        padding: 8px 16px 10px 16px;
-        height: 36px;
+        padding: 8px 16px 8px 16px;
+        //height: 36px;
         width: 76px;
         margin-left: 32px;
         margin-top: 24px;
@@ -355,7 +355,7 @@ $baseWidth: 1200px;
         line-height: 20px;
     }
 
-    .thirdBlock {
+    .third_block {
         flex-direction: row;
     }
 
