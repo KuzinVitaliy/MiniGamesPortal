@@ -250,6 +250,14 @@ $baseWidth: 1200px;
         margin-top: 24px;
         border-radius: $button-border-radius;
         background-color: rgb(247, 247, 247);
+
+        color: rgb(39, 26, 88);
+        font-family: $font-family;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0px;
+        text-align: left;
     }
 
     &__name {
