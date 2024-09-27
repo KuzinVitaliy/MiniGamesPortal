@@ -74,3 +74,19 @@ while (k >= 0) {
     iterations++;
 }
 console.log(k, iterations);
+
+
+let even = prompt(`Пожалуйста введите любое число, программа определит чётное ли оно`);
+let value = Number(even);
+let result = value % 2 == 0;
+if (value != Number(even)) {
+    alert(`Введите корректное число`);
+} else {
+    if (result) {
+        alert(`Это чётное число`);
+    } else {
+        alert(`Это нечетное число`);
+    }
+}
+
+
