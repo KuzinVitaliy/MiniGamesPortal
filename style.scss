@@ -1,5 +1,7 @@
 @import 'common';
 
+
+
 .top {
     z-index: 1;
     background-color: $color3;
@@ -16,6 +18,47 @@
         margin-bottom: 24px;
     }
 }
+
+/*#region Звезды */
+
+.star2 {
+    position: absolute;
+    left: 4.3vw;
+    top: 94px;
+}
+
+.star3 {
+    position: absolute;
+    left: 10.8vw;
+    top: 69px;
+}
+
+.star2m {
+    position: absolute;
+    left: 37px;
+    top: 97px;
+}
+
+.star3m {
+    position: absolute;
+    left: 91px;
+    top: 69px;
+}
+
+.star4m {
+    position: absolute;
+    left: 303px;
+    top: 580px;
+}
+
+.star5m {
+    position: absolute;
+    left: 272px;
+    top: 557px;
+}
+
+/*#end region*/
+
 
 .top_header_stars {
     background-image: url(./img/StarsRight.svg ), url(./img/Star2.svg), url(./img/Star3.svg),
@@ -49,9 +92,10 @@
     position: absolute;
     z-index: 1;
     top: 0;
-    width: 357px;
+    width: 100%;
     height: 710px;
     overflow: hidden;
+    left: 0;
 }
 
 .smallStar {
@@ -192,7 +236,7 @@ $baseWidth: 1200px;
     border: red 1 solid;
 }
 
-.game-kind-column {
+.game-kinds__column {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -243,13 +287,21 @@ $baseWidth: 1200px;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        padding: 8px 16px 10px 16px;
-        height: 36px;
+        padding: 8px 16px 8px 16px;
+        //height: 36px;
         width: 76px;
         margin-left: 32px;
         margin-top: 24px;
         border-radius: $button-border-radius;
         background-color: rgb(247, 247, 247);
+
+        color: rgb(39, 26, 88);
+        font-family: $font-family;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0px;
+        text-align: left;
     }
 
     &__name {
@@ -341,7 +393,7 @@ $baseWidth: 1200px;
 /* форматирования для планшета*/
 /*#region table-version*/
 @media ((max-width: $mainWidth) and (min-width:calc($mainWidthPlan + 1px))) {
-    $mainWidth :$mainWidthPlan;
+    $mainWidth : $mainWidthPlan;
 
     .game-name {
         font-size: 24px;
@@ -355,7 +407,7 @@ $baseWidth: 1200px;
         line-height: 20px;
     }
 
-    .thirdBlock {
+    .game-kinds__column {
         flex-direction: row;
     }
 
@@ -502,6 +554,10 @@ $baseWidth: 1200px;
 
     .mini-game {
         display: none;
+    }
+
+    .top_header_stars {
+        background-image: none;
     }
 
 }
