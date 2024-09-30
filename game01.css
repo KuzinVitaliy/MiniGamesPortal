@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h1 {
+    color: rgb(191, 61, 196);
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(191, 61, 196);
+    padding: 20px;
+    text-align: center;
+
+}
+
+input {
+    border-radius: 20px;
+    height: 30px;
+}
+
+button {
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+}
+
+.content {
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    height: 100vh;
+}
+
+
+.noMoreDemand {
+    background-color: rgb(255, 0, 13);
+    color: rgb(17, 9, 9);
+    font-size: 20px;
+    padding: 40px;
+}
+
+.countInfo {
+    display: flex;
+    padding: 30px;
+}
+
+.badValue {
+    background-color: rgb(0, 255, 136);
+    color: rgb(65, 141, 84);
+    font-size: 20px;
+    padding: 40px;
+}
+
+.victory {
+    background-color: rgb(255, 196, 0);
+    color: rgb(141, 65, 65);
+    font-size: 40px;
+    padding: 40px;
+}
+
+.lessNumber {
+    background-color: rgb(0, 255, 136);
+    color: rgb(65, 141, 84);
+    font-size: 20px;
+    padding: 40px;
+}
