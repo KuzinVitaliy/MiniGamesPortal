@@ -66,3 +66,60 @@ function checkResult() {
     }
     cnt.innerText = demand;
 }
+
+
+//Task 01
+function max(a, b) {
+    if (a > b)
+        return b;
+    return a;
+}
+
+//Task 02
+function isEven(a) {
+    if (a % 2)
+        return 'Число четное';
+    return 'Число нечетное';
+}
+
+//Task 03
+function squareConsole(a) {
+    console.log(`Квадрат числа ${a} = ${a ** 2}`);
+}
+
+function squareConsole(a) {
+    return a ** 2;
+}
+
+//Task 04
+function hello() {
+    do {
+        var year = Number(prompt("Введите ваш возраст"));
+        if (year < 0)
+            alert('Вы ввели неправильное значение');
+        else
+            if (year > 13)
+                alert('Добро пожаловать!');
+            else
+                alert('Привет, друг!');
+    }
+    while (year < 0)
+
+}
+
+//Task 05
+function mult(a, b) {
+    if (isNaN(a) || isNaN(a))
+        return 'Одно или оба значения не являются числом';
+    return a * b;
+
+}
+
+//Task 06
+function mult() {
+
+    var a = prompt("Введите число");
+
+
+
+}
