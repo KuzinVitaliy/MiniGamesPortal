@@ -151,3 +151,20 @@ function TestTask07() {
     console.log(`Aria 2 ${circle1.Area()}`);
     console.log(`Perimeter 2 ${circle1.Perimeter()}`);
 }
+
+var circleBase = {
+    radius: 0,
+    Area: getArea,
+    Perimeter: getPerimeter
+}
+
+function TestTask07_Inh() {
+    var circle01 = Object.create(circleBase);
+    circle01.radius = 5;
+    var circle02 = Object.create(circleBase);
+    circle01.radius = 8;
+    console.log(`Aria 1 ${circle01.Area()}`);
+    console.log(`Perimeter 1 ${circle01.Perimeter()}`);
+    console.log(`Aria 2 ${circle01.Area()}`);
+    console.log(`Perimeter 2 ${circle01.Perimeter()}`);
+}
