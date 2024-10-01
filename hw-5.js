@@ -116,10 +116,38 @@ function mult(a, b) {
 }
 
 //Task 06
-function mult() {
+function task06(n) {
 
-    var a = prompt("Введите число");
+    if (isNaN(n))
+        alert('Переданный параметр не является числом');
+    else alert(`${n} в кубе равняется ${n ** 3}`);
+}
 
+//Task07
 
+function getArea() {
+    return this.radius ** 2 * Math.PI;
+};
 
+function getPerimeter() {
+    return this.radius * 2 * Math.PI;
+};
+
+var circle1 = {
+    radius: 10,
+    Area: getArea,
+    Perimeter: getPerimeter
+}
+
+var circle2 = {
+    radius: 20,
+    Area: getArea,
+    Perimeter: getPerimeter
+}
+
+function TestTask07() {
+    console.log(`Aria 1 ${circle1.Area()}`);
+    console.log(`Perimeter 1 ${circle1.Perimeter()}`);
+    console.log(`Aria 2 ${circle1.Area()}`);
+    console.log(`Perimeter 2 ${circle1.Perimeter()}`);
 }
