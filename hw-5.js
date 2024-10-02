@@ -73,6 +73,7 @@ function checkResult() {
             mainInfo.className = "greaterNumber";
             break;
         case 0:
+            Init();
             mainInfo.className = "victory";
             break;
         case 1:
@@ -80,6 +81,10 @@ function checkResult() {
             break;
     }
     cnt.innerText = demand;
+    if (demand <3)
+        cnt.className = "fewDemand";
+    else
+        cnt.className = "manyDemand";
 }
 
 

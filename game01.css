@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    color: rgb(191, 61, 196);
+    color: rgb(63, 61, 196);
     padding: 20px;
     text-align: center;
 }
@@ -35,13 +35,13 @@ button {
 }
 
 .content {
-    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(0deg, rgb(245, 243, 112) 0%, rgb(114, 121, 9) 35%, rgb(238, 236, 207) 100%);
     height: 100vh;
 }
 
 
 .noMoreDemand {
-    background-color: rgb(255, 0, 13);
+    background-color: rgb(248, 111, 69);
     color: rgb(17, 9, 9);
     font-size: 20px;
     padding: 40px;
@@ -49,26 +49,44 @@ button {
 
 .countInfo {
     display: flex;
+
     padding: 30px;
 }
 
 .badValue {
-    background-color: rgb(0, 255, 136);
+    background-color: rgb(229, 255, 0);
     color: rgb(65, 141, 84);
     font-size: 20px;
     padding: 40px;
 }
 
 .victory {
-    background-color: rgb(255, 196, 0);
+    background-color: rgb(59, 219, 73);
     color: rgb(141, 65, 65);
     font-size: 40px;
     padding: 40px;
 }
 
 .lessNumber {
-    background-color: rgb(0, 255, 136);
+    background-color: rgb(181, 131, 238);
     color: rgb(65, 141, 84);
     font-size: 20px;
     padding: 40px;
+}
+
+.greaterNumber {
+    background-color: rgb(181, 131, 238);
+    color: rgb(65, 141, 84);
+    font-size: 20px;
+    padding: 40px;
+}
+
+.fewDemand {
+    font-size: 30px;
+    color: brown;
+}
+
+.manyDemand {
+    font-size: 30px;
+    color: green;
 }
