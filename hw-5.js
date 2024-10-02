@@ -1,6 +1,6 @@
 const maxDemand = 10;
-var demand = maxDemand;
-var intendedNumber = 0;
+let demand = maxDemand;
+let intendedNumber = 0;
 
 function Init() {
     demand = maxDemand;
@@ -27,40 +27,55 @@ function Check(userNumber) {
     return -1; //ЗАдуманное число больше
 }
 
+function getResultMessage(resultCode) {
+    switch (resultCode) {
+        case -5:
+            return "Все попытки закончились! Вы проиграли";
+        case -4:
+            return "Это число больше 100";
+        case -3:
+            return "Это число меньше или рамное 0 ";
+        case -2:
+            return "Это не число";
+        case -1:
+            return "Задуманное число больше";
+        case 0:
+            return "Поздравляю!! ";
+        case 1:
+            return "Задуманное число меньше";
+    }
+}
+
+
 //Обработка нажатия кнопки проверить
 function checkResult() {
     const userNumber = document.getElementById("userNumber");
-    var mainInfo = document.getElementById("mainInfo");
-    var cnt = document.getElementById("countValue");
+    let mainInfo = document.getElementById("mainInfo");
+    let cnt = document.getElementById("countValue");
 
-    var checkResult = Check(userNumber.value);
+    let checkResult = Check(userNumber.value);
     console.log(`Результат проверки ${checkResult}`)
+    mainInfo.innerText = getResultMessage(checkResult);
     switch (checkResult) {
         case -5:
-            mainInfo.innerText = "Все попытки закончились! Вы проиграли";
             mainInfo.className = "noMoreDemand";
             break;
         case -4:
-            mainInfo.innerText = "Это число больше 100";
             mainInfo.className = "badValue";
             break;
-        case -3: mainInfo.innerText = "Это число меньше или рамное 0 ";
-            //mainInfo.classList.toggle("badValue");
-
+        case -3:
             mainInfo.className = "badValue";
             break;
-        case -2: mainInfo.innerText = "Это не число";
+        case -2:
             mainInfo.className = "badValue";
             break;
         case -1:
-            mainInfo.innerText = "Задуманное число больше";
             mainInfo.className = "greaterNumber";
             break;
-        case 0: mainInfo.innerText = "Поздравляю!! ";
+        case 0:
             mainInfo.className = "victory";
             break;
         case 1:
-            mainInfo.innerText = "Задуманное число меньше";
             mainInfo.className = "lessNumber";
             break;
     }
@@ -69,7 +84,7 @@ function checkResult() {
 
 
 //Task 01
-function max(a, b) {
+function minValue(a, b) {
     if (a > b)
         return b;
     return a;
@@ -94,11 +109,11 @@ function squareConsole(a) {
 //Task 04
 function hello() {
     do {
-        var year = Number(prompt("Введите ваш возраст"));
+        let year = Number(prompt("Введите ваш возраст"));
         if (year < 0)
             alert('Вы ввели неправильное значение');
         else
-            if (year > 13)
+            if (year >= 13)
                 alert('Добро пожаловать!');
             else
                 alert('Привет, друг!');
@@ -133,13 +148,13 @@ function getPerimeter() {
     return this.radius * 2 * Math.PI;
 };
 
-var circle1 = {
+let circle1 = {
     radius: 10,
     Area: getArea,
     Perimeter: getPerimeter
 }
 
-var circle2 = {
+let circle2 = {
     radius: 20,
     Area: getArea,
     Perimeter: getPerimeter
@@ -152,19 +167,38 @@ function TestTask07() {
     console.log(`Perimeter 2 ${circle1.Perimeter()}`);
 }
 
-var circleBase = {
+let circleBase = {
     radius: 0,
     Area: getArea,
     Perimeter: getPerimeter
 }
 
 function TestTask07_Inh() {
-    var circle01 = Object.create(circleBase);
+    let circle01 = Object.create(circleBase);
     circle01.radius = 5;
-    var circle02 = Object.create(circleBase);
+    let circle02 = Object.create(circleBase);
     circle01.radius = 8;
     console.log(`Aria 1 ${circle01.Area()}`);
     console.log(`Perimeter 1 ${circle01.Perimeter()}`);
     console.log(`Aria 2 ${circle01.Area()}`);
     console.log(`Perimeter 2 ${circle01.Perimeter()}`);
+}
+
+function guessNumber() {
+    intendedNumber = Math.round(Math.random() * 99 + 1);
+    let userNumber = 0;
+    let prevResult = "";
+    checkRes = -100;
+    do {
+        let userNumber = prompt(`${prevResult}. Введите число от 1 до 100`);
+        if ( userNumber == null) {
+            prevResult = 'Вы прервали игру';
+            break;
+        }
+        checkRes = Check(userNumber);
+        prevResult = getResultMessage(checkRes);
+    }
+    //while (!(checkRes in [-5, 0]));
+    while (checkRes != -5 && checkRes != 0);
+    alert(prevResult);
 }
