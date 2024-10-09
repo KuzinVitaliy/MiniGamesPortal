@@ -40,7 +40,9 @@
                     <b>приступай</b>.
                 </p>
             </div>
-            <button class="top__button button" type="button">Поехали!</button>
+            <a class="" href="#about">
+                <button class="top__button button" type="button">Поехали!</button>
+            </a>
         </div>
     </header>
     <div class="menu-line">
@@ -54,7 +56,7 @@
     </div>
     <section class="content center content-stars">
         <div class="about-games">
-            <div class="about-games__header1">Об играх</div>
+            <div class="about-games__header1" id="about">Об играх</div>
             <div class="about-games__header2">В моей коллекции представлено 6 игр на разные темы. <br /> Игры несложные
                 — в них может поиграть каждый. <br /> Все игры доступны для пользования.</div>
             <div class="about-games__mobile">Мини-игры</div>
@@ -116,7 +118,7 @@
                     <div class="game-info" id="game01">
                         <div class="game-name">Угадай число</div>
                         <div class="game-description">Попробуй угадать случайное число от 1 до 100.</div>
-                        <button class="play-game">Играть!</button>
+                        <button class="play-game" onclick="guessNumber()">Играть!</button>
                     </div>
                 </div>
                 <div class="game-right">
@@ -124,7 +126,7 @@
                     <div class="game-info" id="game02">
                         <div class="game-name">Простая <br />арифметика</div>
                         <div class="game-description">Попробуй решить простые арифметические задачи.</div>
-                        <button class="play-game">Играть!</button>
+                        <button class="play-game" onclick="Game02()">Играть!</button>
                     </div>
                 </div>
                 <div class="game-left">
@@ -169,7 +171,11 @@
     <script src="--hm-1.js"></script>
     <script src="-hm-2.js"></script>
     <script src="-hm-3.js"></script>
-    <script src="hw-4.js"></script>
+    <script src="-hw-4.js"></script>
+    <script src="-hw-5.js"></script>
+    <script src="hw-6.js"></script>
 </body>
 
 </html>
+
+<!-- window.location.href ='./game01.html' -->

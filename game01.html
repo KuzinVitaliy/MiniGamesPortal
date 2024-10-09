@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game01.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>ИГРА "Угадай число" </h1>
+        <h2>Я загадала число от 1 до 100. </h2>
+        <h2>Попробуйте угадать. У <span id="totalDemand">0</span> вас попыток.!</h2>
+
+        <input class="input" type="number" name="userNumber" id="userNumber" placeholder="Введите число для проверки">
+        <button class="button" onclick="checkResult() ">Проверить</button>
+        <h2>Ваш результат</h2>
+        <div class="resultInfo">
+            <div class="MainInfo" id="mainInfo">Нажмите "Проверить"</div>
+            <div class="countInfo">
+                <div class="manyDemand">Количество попыток : </div>
+                <div class="manyDemand" id="countValue"></div>
+            </div>
+        </div>
+    </div>
+    <script src="hw-5.js"></script>
+    <script>
+        TestTask07();
+        TestTask07_Inh();
+        Init();
+    </script>
+</body>
+
+</html>
