@@ -1,4 +1,4 @@
-return 0;
+//return 0;
 //Задание 1
 //Преобразовать строку в верхний регистр.
 console.log("Задание №1");
@@ -83,3 +83,91 @@ currentDate.setDate(currentDate.getDay() + 73);
 console.log(`Через 73 дня будет ${currentDate.toLocaleDateString('ru-RU', options)}`);
 
 console.log("Задание №10");
+//Дата: [число][месяц на русском][год] — это[день недели на русском].
+//Время: [часы]: [минуты]: [секунды]
+function GetFormattedDate(date) {
+    let res = FormatDateTime(date, 'Дата: dd MMMM yyyy - это день dddd. Время: hh:mm:ss');
+    return res;
+}
+
+console.log(GetFormattedDate(new Date()));
+
+
+function GetDigital(value, dig) {
+    return value.toString().padStart(dig, '0');
+}
+
+function FormatDateTime(date, format, locale = 'ru-RU') {
+    //#region Год
+    if (format.indexOf('yyyyy') >= 0)
+        format = format.replace('yyyyy', GetDigital(date.getFullYear(), 5));
+    if (format.indexOf('yyyy') >= 0)
+        format = format.replace('yyyy', GetDigital(date.getFullYear(), 4));
+    if (format.indexOf('yy') >= 0)
+        format = format.replace('yy', GetDigital(date.getFullYear() % 100, 2));
+    //#endregion
+
+    //#region День
+    if (format.indexOf('dddd') >= 0) {
+        const options = { weekday: 'long' };
+        let mSts = date.toLocaleDateString(locale, options);
+        format = format.replace('dddd', mSts);
+    }
+    if (format.indexOf('ddd') >= 0) {
+        const options = { weekday: 'short' };
+        let mSts = date.toLocaleDateString(locale, options);
+        format = format.replace('ddd', mSts);
+    }
+
+    if (format.indexOf('dd') >= 0)
+        format = format.replace('dd', GetDigital(date.getDay(), 2));
+
+    if (format.indexOf('d') >= 0)
+        format = format.replace('d', date.getDay());
+    //#endregion
+
+    //#region Месяц
+    if (format.indexOf('MMMM') >= 0) {
+        const options = { month: 'long' };
+        let mSts = date.toLocaleDateString(locale, options);
+        format = format.replace('MMMM', mSts);
+    }
+    if (format.indexOf('MMM') >= 0) {
+        const options = { month: 'short' };
+        let mSts = date.toLocaleDateString(locale, options);
+        format = format.replace('MMM', mSts);
+    }
+    if (format.indexOf('MM') >= 0)
+        format = format.replace('MM', GetDigital(date.getMonth(), 2));
+    if (format.indexOf('M') >= 0)
+        format = format.replace('M', date.getMonth());
+    //#endregion
+
+    //#region Часы
+    if (format.indexOf('hh') >= 0)
+        format = format.replace('hh', GetDigital(date.getHours(), 2));
+    if (format.indexOf('h') >= 0)
+        format = format.replace('h', date.getHours());
+    //#endregion
+
+    //#region Минуты
+    if (format.indexOf('mm') >= 0)
+        format = format.replace('mm', GetDigital(date.getMinutes(), 2));
+    if (format.indexOf('m') >= 0)
+        format = format.replace('m', date.getMinutes());
+    //#endregion
+
+    //#region Секунды
+    if (format.indexOf('ss') >= 0)
+        format = format.replace('ss', GetDigital(date.getSeconds(), 2));
+    if (format.indexOf('s') >= 0)
+        format = format.replace('s', date.getSeconds());
+    //#endregion
+    return format;
+}
+
+console.log(FormatDateTime(new Date(), 'dd/MM/yyyy hh:mm:ss ddd'));
+console.log(FormatDateTime(new Date(), 'd/M/yyyy hh:mm:ss ddd'));
+console.log(FormatDateTime(new Date(), 'dd-MMM-yyyy hh:mm:ss dddd'));
+console.log(FormatDateTime(new Date(), 'd-MMMM-yyyy hh:mm:ss dddd'));
+console.log(FormatDateTime(new Date(), 'd-MMMM-yy hh:mm:ss dddd'));

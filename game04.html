@@ -11,16 +11,10 @@
 <body>
     <div>ВИКТОРИНА</div>
     <div class="questions" id="questions">
-        <div class="question">
-            <div class="question-text">Вопрос 1</div>
-            <div class="answers" Варианты ответов>
-                <div class="answer"><input type="radio" name="Q1" id="W1"><label for="W1">WER</label></div>
-                <div class="answer"><input type="radio" name="Q1" id="W2"><label for="W2">WERT</label></div>
-                <div class="answer"><input type="radio" name="Q1" id="W3"><label for="W3">ASDF</label></div>
-            </div>
-        </div>
+       
     </div>
-
+    <button type="button" onclick="CheckResults()">ПРоверить результаты</button>
+    <div id="resTxt"></div>
     <script src="game04.js"></script>
     <script>
         AddAllQuestions();

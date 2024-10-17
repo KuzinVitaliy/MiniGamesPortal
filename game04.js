@@ -25,8 +25,10 @@ function AddNewQuestion(newQuestion, queryNumber) {
             <div class="question-text">${newQuestion.question}</div>
             <div class="answers" id="answers${queryNumber}" Варианты ответов>`
 
-    for (let i = 0; i < options.length; i++) {
-        let answ = `<div class="answer"><input type="radio" name="Q${queryNumber}" id="Q${queryNumber}_A${i}"><label for="Q${queryNumber}_A${i}">${options[i]}</label></div>`;
+
+    for (let i = 0; i < newQuestion.options.length; i++) {
+        let rightAnswer = i == (newQuestion.correctAnswer - 1);
+        let answ = `<div class="answer"><input type="radio" value="${rightAnswer}" name="Q${queryNumber}" id="Q${queryNumber}_A${i}"><label for="Q${queryNumber}_A${i}">${newQuestion.options[i]}</label></div>`;
         res += answ;
     }
     res += `     
@@ -40,9 +42,28 @@ function AddAllQuestions() {
     let questions = GetQuiz();
     let res = '';
     for (let i = 0; i < questions.length; i++) {
-        res + AddNewQuestion(questions[i], i);
+        res += AddNewQuestion(questions[i], i);
     }
 
-    const qeries = document.getElementById("userTest");
-    qeries.innerHTML = res;
+    const qeries = document.getElementById("questions");
+
+    var div = document.createElement('div');
+    div.innerHTML = res;
+    div.id = "queryblock";
+    qeries.appendChild(div);
+}
+
+function CheckResults() {
+    let questions = GetQuiz();
+    let rightAnswers = 0;
+    for (let i = 0; i < questions.length; i++) {
+        let id = `Q${i}_A${questions[i].correctAnswer - 1}`;
+        let check = document.getElementById(id);
+        if (check.checked)
+            rightAnswers++;
+    }
+
+    let resTxt = `Вы ответили правильно на ${rightAnswers} вопрос из ${questions.length}`
+    const resDiv = document.getElementById("resTxt");
+    resDiv.innerText = resTxt;
 }
