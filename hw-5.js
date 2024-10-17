@@ -81,7 +81,7 @@ function checkResult() {
             break;
     }
     cnt.innerText = demand;
-    if (demand <3)
+    if (demand < 3)
         cnt.className = "fewDemand";
     else
         cnt.className = "manyDemand";
@@ -89,11 +89,24 @@ function checkResult() {
 
 
 //Task 01
-function minValue(a, b) {
+function minValue2(a, b) {
     if (a > b)
         return b;
     return a;
 }
+
+function minValue(a, b) { return a > b ? b : a }
+
+console.log(isNaN(234));
+console.log(isNaN('234'));
+console.log(isNaN('sdsd'));
+
+let r=45.6789;
+console.log(`${r:4}`);
+
+console.log(minValue(2, 5));
+console.log(minValue(6, 5));
+console.log(minValue(5, 5));
 
 //Task 02
 function isEven(a) {
@@ -182,11 +195,11 @@ function TestTask07_Inh() {
     let circle01 = Object.create(circleBase);
     circle01.radius = 5;
     let circle02 = Object.create(circleBase);
-    circle01.radius = 8;
+    circle02.radius = 8;
     console.log(`Aria 1 ${circle01.Area()}`);
     console.log(`Perimeter 1 ${circle01.Perimeter()}`);
-    console.log(`Aria 2 ${circle01.Area()}`);
-    console.log(`Perimeter 2 ${circle01.Perimeter()}`);
+    console.log(`Aria 2 ${circle02.Area()}`);
+    console.log(`Perimeter 2 ${circle02.Perimeter()}`);
 }
 
 function guessNumber() {
@@ -196,7 +209,7 @@ function guessNumber() {
     checkRes = -100;
     do {
         let userNumber = prompt(`${prevResult}. Введите число от 1 до 100`);
-        if ( userNumber == null) {
+        if (userNumber == null) {
             prevResult = 'Вы прервали игру';
             break;
         }

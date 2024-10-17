@@ -20,7 +20,7 @@ function CheckValue(cv) {
     if ((cv > 0) && (cv < 10)) {
         console.log("T02 Верно")
     }
-    else { console.log("T02 Не верно") }
+    else { console.log("T02 Неверно") }
 }
 
 //Task 03
