@@ -1,0 +1,36 @@
+@import 'common';
+
+.content {
+    background-color: coral;
+    width: 1000px;
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    background-color: aqua;
+}
+
+.caption {
+    background-color: aqua;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.inputText {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.result {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
