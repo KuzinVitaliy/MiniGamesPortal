@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+h2 {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+h3 {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.text1 {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.text2 {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.text3 {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  height: 66px;
+  width: 247px;
+}
+
+.button:hover {
+  color: rgb(32, 32, 39);
+  background-color: rgb(255, 255, 255);
+}
+
+.block-view01 {
+  border: 1px red solid;
+}
+
+.block-view02 {
+  border: 1px blue solid;
+}
+
+.block-view03 {
+  border: 1px green solid;
+}
+
+.button {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+}
+.button :disabled {
+  background-color: red;
+}
+
+.startButton {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 15px;
+}
+
+.counterText {
+  font-size: 20px;
+  text-align: center;
+  background-color: bisque;
+}
+
+.progress-bar {
+  width: 0;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  border-radius: 15px;
+}/*# sourceMappingURL=game05.css.map */

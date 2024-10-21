@@ -12,7 +12,9 @@ function GotoGame(gameNumber) {
         case 4:
             window.location.href = './game04.html'
             break;
-
+        case 5:
+            window.location.href = './game05.html'
+            break;
         default:
             break;
     }
