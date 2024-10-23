@@ -101,8 +101,8 @@ console.log(isNaN(234));
 console.log(isNaN('234'));
 console.log(isNaN('sdsd'));
 
-let r=45.6789;
-console.log(`${r:4}`);
+let r = 45.6789;
+console.log(`${r}`);
 
 console.log(minValue(2, 5));
 console.log(minValue(6, 5));
