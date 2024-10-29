@@ -49,3 +49,9 @@ function ontask06() {
    listEl.appendChild(newElement)
 
 }
+
+function ontask07() {
+   const h1Els = document.querySelector(".description");
+   if (h1Els) h1Els.remove();
+
+}
