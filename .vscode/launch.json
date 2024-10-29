@@ -15,6 +15,12 @@
             "request": "launch",
             "name": "Open game01.html",
             "file": "c:\\Users\\vkuzi\\source\\GIT\\MiniGamePortal\\game01.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "HW9",
+            "file": "c:\\Users\\vkuzi\\source\\GIT\\MiniGamePortal\\hw9.html"
         }
     ]
 }
