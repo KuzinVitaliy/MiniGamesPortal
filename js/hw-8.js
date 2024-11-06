@@ -24,7 +24,7 @@ function isMale(people) {
 function filter(arr, rule) {
     result = [];
     for (item of arr)
-        if (rule(item))
+        if (rule (item))
             result.push(item);
     return result;
 }
@@ -48,7 +48,7 @@ setTimeout(() => { clearInterval(interval); }, 30 * 1000);
 
 console.log("Задание №4");
 function delayForSecond(callback) {
-    setTimeout(() => { callback(); }, 5 * 1000);
+    setTimeout(() => { callback (); }, 5 * 1000);
 
 }
 
