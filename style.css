@@ -440,6 +440,7 @@ h3 {
   background-color: transparent;
   gap: 32px;
   padding-bottom: 110px;
+  scroll-behavior: smooth;
 }
 
 .game-base, .game-right, .game-left {
@@ -458,6 +459,7 @@ h3 {
 .game-info {
   flex-basis: 50%;
   flex-grow: 1;
+  scroll-behavior: smooth;
 }
 
 .game-logo {

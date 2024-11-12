@@ -11,9 +11,6 @@ function Game02() {
     }
 }
 
-console.log(sumArray(...arr));
-console.log(Math.max(...arr));
-
 console.log(GetNextExpression());
 console.log(GetNextExpression());
 console.log(GetNextExpression());

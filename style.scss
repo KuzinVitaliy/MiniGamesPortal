@@ -1,7 +1,6 @@
 @import 'common';
 
 
-
 .top {
     z-index: 1;
     background-color: $color3;
@@ -368,6 +367,7 @@ $baseWidth: 1200px;
     background-color: transparent;
     gap: 32px;
     padding-bottom: 110px;
+    scroll-behavior: smooth;
 }
 
 .game-base {
@@ -394,6 +394,7 @@ $baseWidth: 1200px;
 .game-info {
     flex-basis: 50%;
     flex-grow: 1;
+    scroll-behavior: smooth;
 }
 
 .game-logo {
