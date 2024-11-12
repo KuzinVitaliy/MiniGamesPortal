@@ -166,7 +166,7 @@ h3 {
 }
 
 .top__button {
-  margin-top: 48px;
+  margin-top: 25px;
   background-color: black;
   margin-bottom: 100px;
 }
@@ -180,6 +180,22 @@ h3 {
   width: 100vw;
   height: 710px;
   overflow: hidden;
+}
+
+.text_info, .text_info_mob {
+  text-align: center;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.text_info_mob {
+  display: none;
+  padding-left: 9%;
+  padding-right: 7%;
 }
 
 .star-block-mob {
@@ -202,7 +218,7 @@ h3 {
 
 .content-stars {
   background-image: url(./img/BlackStar1.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg);
-  background-position: 998px 73px, 50px 862px, 30px 809px, 1336px 1636px, 1282px 1600px, 1349px 4950px, 1281px 4900px;
+  background-position: 980px 107px, 50px 862px, 30px 809px, 1323px 1595px, 1275px 1559px, 1320px 4835px, 1250px 4880px;
   background-repeat: no-repeat;
 }
 
@@ -215,6 +231,7 @@ h3 {
 
 .main-header {
   padding-bottom: 24px;
+  min-width: 770px;
 }
 
 .light01 {
@@ -237,7 +254,7 @@ h3 {
 
 .menu-line {
   background-color: rgb(188, 236, 48);
-  padding: 20px;
+  padding: 27px 27px 27px 20px;
   bottom: unset;
   max-width: 100vw;
   white-space: nowrap;
@@ -246,7 +263,7 @@ h3 {
 .menu-line__item {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 31px;
   font-weight: 700;
   line-height: 110%;
   letter-spacing: 4%;
@@ -259,7 +276,8 @@ h3 {
   color: transparent;
   background-image: url("./img/BlackStar.svg");
   background-repeat: no-repeat;
-  margin-left: 20px;
+  margin-left: 53px;
+  margin-right: 39px;
 }
 
 .content {
@@ -267,7 +285,7 @@ h3 {
 }
 
 .about-games {
-  padding-top: 94px;
+  padding-top: 98px;
 }
 .about-games__header1 {
   color: rgb(255, 255, 255);
@@ -280,7 +298,7 @@ h3 {
 }
 .about-games__header2 {
   color: rgb(255, 255, 255);
-  margin-top: 24px;
+  margin-top: 26px;
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 400;
@@ -328,12 +346,12 @@ h3 {
 .game-name {
   color: rgb(32, 32, 39);
   font-family: Montserrat;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 59px;
   letter-spacing: 0px;
   text-align: left;
-  padding: 48px 48px 0px 48px;
+  padding: 50px 48px 0px 48px;
 }
 
 .game-description {
@@ -344,7 +362,8 @@ h3 {
   line-height: 32px;
   letter-spacing: 0px;
   text-align: left;
-  padding: 24px 48px 36px 48px;
+  max-width: 457px;
+  padding: 24px 0px 36px 48px;
 }
 
 .game-kind {
@@ -366,10 +385,9 @@ h3 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 8px 16px 8px 16px;
-  width: 76px;
-  margin-left: 32px;
-  margin-top: 24px;
+  padding: 10px 16px 8px 16px;
+  margin-left: 30px;
+  margin-top: 30px;
   border-radius: 60px;
   background-color: rgb(247, 247, 247);
   color: rgb(39, 26, 88);
@@ -389,11 +407,11 @@ h3 {
   line-height: 39px;
   letter-spacing: 0px;
   text-align: left;
-  padding: 8px 48px 0px 48px;
+  padding: 16px 48px 7px 30px;
 }
 
 .footer {
-  height: 150px;
+  height: 152px;
   background: rgb(189, 237, 53);
   text-align: center;
   justify-content: center;
@@ -414,22 +432,23 @@ h3 {
   line-height: 78px;
   letter-spacing: 0px;
   text-align: left;
-  padding-top: 46px;
+  padding-top: 92px;
   padding-bottom: 72px;
 }
 
 .games {
   background-color: transparent;
   gap: 32px;
-  padding-bottom: 140px;
+  padding-bottom: 110px;
 }
 
 .game-base, .game-right, .game-left {
   display: flex;
   flex-direction: row;
   background-color: rgb(255, 255, 255);
-  margin-bottom: 32px;
-  border-radius: 47px;
+  margin-bottom: 34px;
+  border-radius: 30px;
+  max-height: 501px;
 }
 
 .game-left {
@@ -449,7 +468,19 @@ h3 {
 
 .play-game {
   background-color: black;
-  margin-left: 40px;
+  margin-left: 47px;
+}
+
+.game-description_04 {
+  max-width: 476px;
+}
+
+.game-description_05 {
+  max-width: 382px;
+}
+
+.game-description_06 {
+  max-width: 540px;
 }
 
 /* форматирования для планшета*/
@@ -475,30 +506,94 @@ h3 {
 }
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
-@media (max-width: 786px) {
+@media (max-width: 414px) {
   .star-block {
     display: none;
   }
-  .text1 {
+  .menu-line {
+    padding: 15px 25px 17px 18px;
+  }
+  .menu-line__item {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .menu-line__item::after {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 32px;
+    margin-right: 17px;
+    background-size: contain;
+  }
+  .top {
+    min-height: 650px;
+  }
+  .top__headers {
+    padding-left: calc(50% - 207px);
+    padding-right: calc(50% - 207px);
+  }
+  .main-header {
+    min-width: 100%;
+  }
+  .text_info, .text_info_mob {
     padding-bottom: 0px;
+    display: none;
+  }
+  .text_info_mob {
+    padding-bottom: 0px;
+    display: block;
   }
   .star-block-mob {
     display: block;
   }
   .top__headers {
     padding-top: 147px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .center {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .play-game {
+    height: 57px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .top__button {
     width: 100%;
+    height: 56px;
+    width: 76%;
+    margin-top: 12px;
+    margin-left: 13%;
+    margin-right: 13%;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .about-games__mobile {
     display: block;
+    padding-left: 16px;
   }
   .about-games__header1 {
     display: none;
@@ -508,19 +603,40 @@ h3 {
   }
   .game-name {
     padding: 0px;
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
   }
   .game-description {
     padding-left: 0px;
     padding-right: 0px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 14px;
+    padding-bottom: 30px;
   }
   .game-left {
     flex-direction: column;
+    max-height: 640px;
+    margin-bottom: 27px;
   }
   .game-right {
     flex-direction: column;
+    max-height: 640px;
+    margin-bottom: 27px;
   }
   .game-info {
-    padding: 30px;
+    padding: 29px;
+    padding-bottom: 30px;
   }
   .play-game {
     width: 100%;
@@ -537,13 +653,11 @@ h3 {
     text-align: left;
     padding-bottom: 32px;
   }
+  .game-description_05 {
+    padding-bottom: 30px;
+  }
   .about-games {
     padding-top: 48px;
-  }
-  .top__button {
-    margin-top: 0px;
-    background-color: black;
-    margin-bottom: 90px;
   }
   .menu-line {
     display: block;
@@ -558,16 +672,9 @@ h3 {
     text-align: center;
   }
   .games {
-    padding-bottom: 40px;
-  }
-  .text1 {
-    text-align: center;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .footer {
     height: 100px;
