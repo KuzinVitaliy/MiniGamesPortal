@@ -1,0 +1,1 @@
+xcopy  C:\Users\vkuzi\source\GIT\MiniGamePortal\*.* C:\inetpub\wwwroot\MGP\*.* /Y /D /S

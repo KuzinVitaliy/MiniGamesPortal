@@ -1,7 +1,6 @@
 @import 'common';
 
 
-
 .top {
     z-index: 1;
     background-color: $color3;
@@ -71,7 +70,7 @@
 }
 
 .top__button {
-    margin-top: 48px;
+    margin-top: 25px;
     background-color: black;
     margin-bottom: 100px;
 }
@@ -85,6 +84,25 @@
     width: 100vw;
     height: 710px;
     overflow: hidden;
+}
+
+.text_info {
+
+
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.text_info_mob {
+    @extend .text_info;
+    display: none;
+    padding-left: 9%;
+    padding-right: 7%;
 }
 
 .star-block-mob {
@@ -107,7 +125,7 @@
 
 .content-stars {
     background-image: url(./img/BlackStar1.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg), url(./img/BlackStar2.svg), url(./img/BlackStar3.svg);
-    background-position: 998px 73px, 50px 862px, 30px 809px, 1336px 1636px, 1282px 1600px, 1349px 4950px, 1281px 4900px;
+    background-position: 980px 107px, 50px 862px, 30px 809px, 1323px 1595px, 1275px 1559px, 1320px 4835px, 1250px 4880px;
     background-repeat: no-repeat;
 }
 
@@ -123,6 +141,7 @@ $starBaseY : -00px;
 
 .main-header {
     padding-bottom: 24px;
+    min-width: 770px;
 }
 
 .light01 {
@@ -148,7 +167,7 @@ $starBaseY : -00px;
     //flex-direction: row;
     //flex-wrap: nowrap;
     background-color: $color2;
-    padding: 20px;
+    padding: 27px 27px 27px 20px;
     bottom: unset;
     max-width: 100vw;
     white-space: nowrap;
@@ -157,7 +176,7 @@ $starBaseY : -00px;
     &__item {
         color: $color1;
         font-family: $font-family;
-        font-size: 30px;
+        font-size: 31px;
         font-weight: 700;
         line-height: 110%;
         letter-spacing: 4%;
@@ -171,7 +190,8 @@ $starBaseY : -00px;
         color: transparent;
         background-image: url("./img/BlackStar.svg");
         background-repeat: no-repeat;
-        margin-left: 20px;
+        margin-left: 53px;
+        margin-right: 39px;
     }
 }
 
@@ -180,7 +200,7 @@ $starBaseY : -00px;
 }
 
 .about-games {
-    padding-top: 94px;
+    padding-top: 98px;
 
     &__header1 {
         color: $color4;
@@ -194,7 +214,7 @@ $starBaseY : -00px;
 
     &__header2 {
         color: $color4;
-        margin-top: 24px;
+        margin-top: 26px;
         font-family: $font-family;
         font-size: 24px;
         font-weight: 400;
@@ -244,14 +264,14 @@ $baseWidth: 1200px;
 
 
 .game-name {
-    color: $color1;
-    font-family: $font-family;
-    font-size: 32px;
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 39px;
+    line-height: 59px;
     letter-spacing: 0px;
     text-align: left;
-    padding: 48px 48px 0px 48px;
+    padding: 50px 48px 0px 48px;
 }
 
 .game-description {
@@ -262,8 +282,8 @@ $baseWidth: 1200px;
     line-height: 32px;
     letter-spacing: 0px;
     text-align: left;
-    padding: 24px 48px 36px 48px;
-
+    max-width: 457px;
+    padding: 24px 0px 36px 48px;
 }
 
 .game-kind {
@@ -287,11 +307,11 @@ $baseWidth: 1200px;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        padding: 8px 16px 8px 16px;
+        padding: 10px 16px 8px 16px;
         //height: 36px;
-        width: 76px;
-        margin-left: 32px;
-        margin-top: 24px;
+        //width: 76px;
+        margin-left: 30px;
+        margin-top: 30px;
         border-radius: $button-border-radius;
         background-color: rgb(247, 247, 247);
 
@@ -313,12 +333,12 @@ $baseWidth: 1200px;
         line-height: 39px;
         letter-spacing: 0px;
         text-align: left;
-        padding: 8px 48px 0px 48px;
+        padding: 16px 48px 7px 30px;
     }
 }
 
 .footer {
-    height: 150px;
+    height: 152px;
     background: rgb(189, 237, 53);
     text-align: center;
     justify-content: center;
@@ -340,7 +360,7 @@ $baseWidth: 1200px;
     line-height: 78px;
     letter-spacing: 0px;
     text-align: left;
-    padding-top: 46px;
+    padding-top: 92px;
     padding-bottom: 72px;
 }
 
@@ -348,7 +368,8 @@ $baseWidth: 1200px;
 .games {
     background-color: transparent;
     gap: 32px;
-    padding-bottom: 140px;
+    padding-bottom: 110px;
+    scroll-behavior: smooth;
 }
 
 .game-base {
@@ -357,8 +378,9 @@ $baseWidth: 1200px;
     //    width: 1200px;
     //height: 500px;
     background-color: $color4;
-    margin-bottom: 32px;
-    border-radius: 47px;
+    margin-bottom: 34px;
+    border-radius: 30px;
+    max-height: 501px;
 
 }
 
@@ -374,6 +396,7 @@ $baseWidth: 1200px;
 .game-info {
     flex-basis: 50%;
     flex-grow: 1;
+    scroll-behavior: smooth;
 }
 
 .game-logo {
@@ -385,7 +408,19 @@ $baseWidth: 1200px;
 .play-game {
     @extend .button;
     background-color: black;
-    margin-left: 40px;
+    margin-left: 47px;
+}
+
+.game-description_04 {
+    max-width: 476px;
+}
+
+.game-description_05 {
+    max-width: 382px;
+}
+
+.game-description_06 {
+    max-width: 540px;
 }
 
 @media screen {}
@@ -420,15 +455,73 @@ $baseWidth: 1200px;
 
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
-@media (max-width: $mainWidthPlan) {
+@media (max-width: $mainWidthMob) {
     .star-block {
         display: none;
     }
 
-
-    .text1 {
-        padding-bottom: 0px;
+    .menu-line {
+        padding: 15px 25px 17px 18px;
     }
+
+    .menu-line__item {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .menu-line__item::after {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
+
+        margin-left: 32px;
+        margin-right: 17px;
+        background-size: contain;
+    }
+
+    .top {
+        min-height: 650px;
+    }
+
+    .top__headers {
+        padding-left: calc(50% - $mainWidthMob/2);
+        padding-right: calc(50% - $mainWidthMob/2);
+    }
+
+    .main-header {
+        min-width: 100%;
+        //background-color: red;
+    }
+
+    .text_info {
+        padding-bottom: 0px;
+        display: none;
+
+        text-align: center;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .text_info_mob {
+        padding-bottom: 0px;
+        display: block;
+    }
+
 
     .star-block-mob {
         display: block;
@@ -436,21 +529,46 @@ $baseWidth: 1200px;
 
     .top__headers {
         padding-top: 147px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .center {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .play-game {
+        height: 57px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
     }
 
     .top__button {
         width: 100%;
+        height: 56px;
+        width: 76%;
+        margin-top: 12px;
+        margin-left: 13%;
+        margin-right: 13%;
+
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
     }
 
     .about-games__mobile {
         display: block;
+        padding-left: 16px;
     }
 
     .about-games__header1 {
@@ -463,26 +581,44 @@ $baseWidth: 1200px;
 
     .game-name {
         padding: 0px;
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
     }
 
     .game-description {
         padding-left: 0px;
         padding-right: 0px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 14px;
+        padding-bottom: 30px;
     }
 
     .game-left {
-        @extend .game-base;
         flex-direction: column;
+        max-height: 640px;
+        margin-bottom: 27px;
     }
 
     .game-right {
-        @extend .game-base;
         flex-direction: column;
+        max-height: 640px;
+        margin-bottom: 27px;
     }
 
     .game-info {
-        padding: 30px;
-
+        padding: 29px;
+        padding-bottom: 30px;
     }
 
     .play-game {
@@ -503,14 +639,12 @@ $baseWidth: 1200px;
         padding-bottom: 32px;
     }
 
-    .about-games {
-        padding-top: 48px;
+    .game-description_05 {
+        padding-bottom: 30px;
     }
 
-    .top__button {
-        margin-top: 0px;
-        background-color: black;
-        margin-bottom: 90px;
+    .about-games {
+        padding-top: 48px;
     }
 
     .menu-line {
@@ -528,18 +662,11 @@ $baseWidth: 1200px;
     }
 
     .games {
-        padding-bottom: 40px;
+        padding-bottom: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
-    .text1 {
-        text-align: center;
-        padding-bottom: 0px;
-        padding-top: 0px;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-        text-align: center;
-    }
 
     .footer {
         height: 100px;
